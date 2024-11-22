@@ -1,0 +1,40 @@
+/* Reset basic styling */
+* {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  body{
+    background-color: aqua
+    ;
+  }
+    .container {     
+        display:grid ;
+        margin: 10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 10vh 40vh 40vh 10vh;
+        grid-template-areas: 
+        "h h h h h"
+        "c1  c1  c1 c2 sb1"
+        " ex1 ex1 ex1 ex2 sb1"
+        "f f f f f";
+        }
+        .box1{ grid-area: h;}
+        .box2{ grid-area: sb1;}
+        .box3{ grid-area: c1;}
+        .box4{ grid-area: c2}        
+        .box5{ grid-area: ex1;}
+        .box6{ grid-area: ex2;}
+        .box7{ grid-area: f;}
+
+.box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8,.box9,.box10{
+    background-color: aquamarine;
+    color:black;
+    font-size: 4rem;
+    display: flex;
+    border: 1px solid gray;
+    justify-content: center;
+    align-items: center;
+}

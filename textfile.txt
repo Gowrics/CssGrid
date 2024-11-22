@@ -1,0 +1,17 @@
+ grid-template-columns: repeat(3,1fr);   seperate 3 same col with repeate fun
+
+ grid-template-columns: 1fr 1fr 1fr;    same
+
+ grid-template-columns: 1fr minmax(300px,1fr) 1fr;    1st 1,2nd 1 but minmax 300px,3rd 1
+
+ grid-template-columns: repeat(auto-fit, minmax(200px,3fr));  seperate the col with occupy full width  
+
+autofit , autofill
+
+ grid-template-columns: repeat(auto-fill, minmax(200px,3fr));  seperate the col with the mentioned pixel and balance should pending   
+
+ grid-template-rows: 100px 200px;   
+ grid-auto-rows: 100px;   extra added rows pixel 100px
+grid-auto-columns: 100px;
+
+grid-auto-flow:column; 
